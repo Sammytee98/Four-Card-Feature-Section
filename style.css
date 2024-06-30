@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 98%);
+}
+.container {
+    max-width: 480px;
+    height: auto;
+    padding: 100px 0 50px 0;
+}
+.container .homeHeading {
+    font-size: 1.5rem;
+    font-weight: 200;
+    text-align: center;
+    color: hsl(234, 12%, 34%);
+}
+.container .homeHeading .homeSpan {
+    font-weight: 600;
+}
+.container .homeParagraph {
+    font-size: 15px;
+    font-weight: 400;
+    color: hsl(229, 6%, 66%);
+    text-align: center;
+    margin-top: 20px;
+}
+.flexContainer{
+    max-width: 600px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flexContainer .innerFlexContainer:first-child {
+    min-width: 200px;
+    height: 200px;
+    position: relative;
+    box-shadow: 0 0 15px hsl(180, 44%, 85%), 0 0 25px hsl(0, 0%, 98%), 0 0 50px hsl(0, 0%, 98%);
+    border-top: 3px solid hsl(212, 86%, 64%);
+    border-radius: 10px;
+    padding: 20px 10px 0px 20px;
+}
+.flexContainer .innerFlexContainer:first-child h2 {
+    font-size: 1.2rem;
+    color: hsl(234, 12%, 34%);
+}
+.flexContainer .innerFlexContainer:first-child p {
+    font-size: 15px;
+    margin-top: 10px;
+    color: hsl(229, 6%, 66%);
+}
+.flexContainer .innerFlexContainer:nth-child(2) {
+    margin-inline: 30px;
+}
+.innerFlexContainer .doubleFlexbox {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    box-shadow: 0 0 15px hsl(180, 44%, 85%), 0 0 25px hsl(0, 0%, 98%), 0 0 50px hsl(0, 0%, 98%);
+    border-top: 3px solid hsl(0, 78%, 62%);
+    border-radius: 10px;
+    padding: 20px 10px 0px 20px;
+}
+.innerFlexContainer .doubleFlexbox:nth-child(2) {
+    border-top: 3px solid hsl(34, 97%, 64%);
+    margin-top: 30px;
+}
+.innerFlexContainer .doubleFlexbox h2 {
+    font-size: 1.2rem;
+    color: hsl(234, 12%, 34%);
+}
+.innerFlexContainer .doubleFlexbox p {
+    font-size: 15px;
+    margin-top: 10px;
+    color: hsl(229, 6%, 66%);
+}
+.flexContainer .innerFlexContainer:last-child {
+    min-width: 200px;
+    height: 200px;
+    position: relative;
+    box-shadow: 0 0 15px hsl(180, 44%, 85%), 0 0 25px hsl(0, 0%, 98%), 0 0 50px hsl(0, 0%, 98%);
+    border-top: 3px solid hsl(229, 6%, 66%);
+    border-radius: 10px;
+    padding: 20px 10px 0px 20px;
+}
+.flexContainer .innerFlexContainer:last-child h2 {
+    font-size: 1.2rem;
+    color: hsl(234, 12%, 34%);
+}
+.flexContainer .innerFlexContainer:last-child p {
+    font-size: 15px;
+    margin-top: 10px;
+    color: hsl(229, 6%, 66%);
+}
+.innerFlexContainer .boxIcon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 70%;
+    left: 80%;
+}
+
+@media (max-width:771px) {
+    .container {
+        max-width: 300px;
+    }
+    .flexContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .flexContainer .innerFlexContainer:first-child, .innerFlexContainer:last-child {
+        width: 250px;
+        margin-bottom: 30px;
+    }
+    .innerFlexContainer .doubleFlexbox {
+        width: 250px;
+        margin-bottom: 30px;
+    }
+}
+
+
+
+
+
+
+.attribution {
+    font-size: 11px; text-align: center;
+    margin-block: 30px;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
